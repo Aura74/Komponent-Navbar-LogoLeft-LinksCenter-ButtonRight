@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR AT THE TOP */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+.navbarContainer {
+  font-family: "Roboto", sans-serif;
+  color: #000000bd;
+  background-color: #5291e4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbarAtTheTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1144px;
+  padding: 0 16px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.menuInNavTop {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuInNavTop a {
+  color: #fff;
+  margin: 0 16px;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.menuInNavTop a:hover {
+  text-decoration: underline;
+  color: #0a2540;
+}
+.navbarTop-button {
+  background: rgba(250, 250, 250, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: #0a2540;
+  color: #fff;
+  padding: 8px 16px;
+  transition: all 0.15s ease;
+}
+
+.navbarTop-button:hover {
+  background-color: #6d7a88;
+  cursor: pointer;
+}
+
+.hamburger-button {
+  display: none;
+}
+
+.logoBild {
+  max-height: 120px;
+}
+
+.hamburger-button {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbarAtTheTop {
+    margin: 8px 0 24px 0;
+  }
+  .navbarAtTheTop .menuInNavTop {
+    display: none;
+  }
+
+  .navbarAtTheTop .navbarTop-button {
+    display: none;
+  }
+
+  .hamburger-button {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-button .bar {
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    margin: 1px 0;
+  }
+}
